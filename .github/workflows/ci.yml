@@ -28,7 +28,7 @@ jobs:
       run: python app.py
   compile-app-windows:
   
-    depends-on: compile-app-ubuntu
+    needs: compile-app-ubuntu
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
