@@ -27,8 +27,9 @@ jobs:
     - name: Run application script
       run: python app.py
   compile-app-windows:
+  
     runs-on: windows-latest
-
+    depends-on: compile-app-ubuntu
     steps:
     - uses: actions/checkout@v4
     
